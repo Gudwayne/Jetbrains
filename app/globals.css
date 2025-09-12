@@ -163,3 +163,7 @@
     font-family: var(--font-jetbrainsMono), sans-serif;
   }
 }
+
+.bg-primary{
+  @apply bg-background
+}

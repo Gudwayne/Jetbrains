@@ -146,8 +146,26 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+.bg-primary{
+  @apply bg-background
+}
+.bg-accent{
+  background-color: aquamarine;
+}
+.text-primary{
+  color: oklch(0.129 0.042 264.695);
+}
 .text-accent{
   color: aquamarine
+}
+.hovertext:hover{
+  color: aquamarine;
+}
+.hovertextPR:hover{
+  color: oklch(0.129 0.042 264.695);
+}
+.hoverbtn:hover{
+  background-color: rgb(80, 223, 175);
 }
 .border-accent{
   border-color: aquamarine
@@ -158,12 +176,19 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground leading-loose;
 
     font-family: var(--font-jetbrainsMono), sans-serif;
   }
+
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+  }
 }
 
-.bg-primary{
-  @apply bg-background
-}

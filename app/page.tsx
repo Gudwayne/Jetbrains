@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi"
 // components
 import Socials from "@/components/Socials"
 import Photo from "@/components/Photo"
+import Stats from "@/components/Stats"
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between lg:pt-8 lg:pb-24">
           
           {/* text */}
-          <div className="text-center lg:text-left">
+          <div className="text-center lg:text-left order-2 lg:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br /> <span className="text-accent">Godwin Jonah</span>
@@ -40,11 +41,13 @@ const Home = () => {
           </div>
 
           {/* photo */}
-          <div>
+          <div className="order-1 lg:order-none mb-8 lg:mb-0">
             <Photo />
           </div>
         </div>
       </div>
+
+      <Stats />
     </section>
   )
 }

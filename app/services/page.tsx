@@ -51,12 +51,12 @@ const Services = () => {
                 {/* top */}
                 <div className="w-full flex justify-between items-center">
                   <div className="text-5xl font-extrabold text-outline text-transparent">{service.num}</div>
-                  <Link href={service.href}><BsArrowDownRight/></Link>
+                  <Link href={service.href} className="transition-all duration-500 group-hover:-rotate-45"><BsArrowDownRight/></Link>
                 </div>
                 {/* title */} 
-                <h2>{service.title}</h2>
+                <h2 className="text-[38px] font-semibold leading-none text-white">{service.title}</h2>
                 {/* description */}
-                <p>{service.description}</p>
+                <p className="text-white/60">{service.description}</p>
                 {/* border */}
                 <div className="border-b border-white/20 w-full"></div>
               </div>

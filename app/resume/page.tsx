@@ -163,20 +163,20 @@ const Resume = () => {
     >
       <div className="container mx-auto">
         <Tabs
-          defaultValue='experience'
+          defaultValue="experience"
           className='flex flex-col lg:flex-row gap-[60px]'
         >
           <TabsList className='flex flex-col w-full max-w-[380px] mx-auto lg:mx-0'>
-            <TabsTrigger value={'experience'}>Experience</TabsTrigger>
-            <TabsTrigger value={'education'}>Education</TabsTrigger> 
-            <TabsTrigger value={'skills'}>Skills</TabsTrigger>
-            <TabsTrigger value={'about'}>About me</TabsTrigger>
+            <TabsTrigger value="experience">Experience</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger> 
+            <TabsTrigger value='skills'>Skills</TabsTrigger>
+            <TabsTrigger value='about'>About me</TabsTrigger>
           </TabsList>
 
           {/* content */}
           <div className="min-h-[70vh] w-full">
             {/* experience */}
-            <TabsContent value='experience' className='w-full'></TabsContent>
+            <TabsContent value="experience" className='w-full'>experience</TabsContent>
           </div>
         </Tabs> 
       </div>
